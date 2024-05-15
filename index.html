@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluditos</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <h1>Peluditos</h1>
+    <nav>
+        <ul>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Redes sociales</a></li>
+            <li><a href="">Valores</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <div class="articulo">
+            <div class="secciones">
+                <div>
+                    <h2>Pugcitos</h2><br>
+                    <p>Los pugs son una raza de perros de origen chino que se caracterizan por 
+                    su rostro arrugado y su cola enroscada. Una curiosidad muy interesante sobre
+                    los pugs es que eran los perros favoritos de la dinastía real china Ming, y 
+                    eran criados y cuidados con gran esmero en los palacios imperiales. Además,
+                    los pugs son conocidos por su personalidad cariñosa y juguetona, lo que los 
+                    convierte en excelentes compañeros de vida. ¡Son una verdadera fuente de 
+                    alegría para quienes tienen la suerte de convivir con ellos!</p>
+                </div>
+                <div> <img src="img/pug.jpg" alt="pug"></div>
+            </div>
+        </div>
+        <div class="menu-secundario"></div>
+    </div>
+
+    <h2>Registra tu cita</h2>
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+            <form method="POST" id="citaForm">
+                <div class="formbold-input-flex">
+                    <div>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="jhon@mail.com"
+                            class="formbold-form-input"
+                        />
+                        <label for="email" class="formbold-form-label"> E-mail </label>
+                    </div>
+                    <div>
+                        <input
+                            type="text"
+                            name="firstName"
+                            id="firstName"
+                            placeholder="Jane"
+                            class="formbold-form-input"
+                        />
+                        <label for="firstName" class="formbold-form-label"> Nombre </label>
+                    </div>
+                    <div>
+                        <input
+                            type="text"
+                            name="lastName"
+                            id="lastName"
+                            placeholder="Cooper"
+                            class="formbold-form-input"
+                        />
+                        <label for="lastName" class="formbold-form-label"> Primer Apellido </label>
+                    </div>
+                </div>
+
+                <div class="formbold-input-flex">
+                    <div>
+                        <input
+                            type="text"
+                            name="petName"
+                            id="petName"
+                            placeholder="Nombre de tu peludito"
+                            class="formbold-form-input"
+                            required
+                        />
+                        <label for="petName" class="formbold-form-label"> Nombre de tu peludito </label>
+                    </div>
+                </div>
+
+                <div class="formbold-input-flex">
+                    <div>
+                        <input
+                            type="text"
+                            name="service"
+                            id="service"
+                            placeholder="Tipo de servicio"
+                            class="formbold-form-input"
+                            required
+                        />
+                        <label for="service" class="formbold-form-label"> Tipo de servicio </label>
+                    </div>
+                </div>
+
+                <div class="formbold-textarea">
+                    <textarea
+                        rows="6"
+                        name="favoriteHobby"
+                        id="favoriteHobby"
+                        placeholder="Escribe aquí el pasatiempo favorito de tu peludito..."
+                        class="formbold-form-input"
+                    ></textarea>
+                    <label for="favoriteHobby" class="formbold-form-label"> Pasatiempo favorito de tu peludito </label>
+                </div>
+
+                <div id="btn-c" class="formbold-btn-wrapper">
+                    <button id="btnRegistrar" class="formbold-btn">Agendar cita</button>
+                    <a href="tabla.html" class="formbold-btn">Registro de citas</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>"Cuidar a nuestras mascotas es más que una responsabilidad, 
+            es un compromiso de amor incondicional. Su lealtad y compañía 
+            merecen nuestro respeto y dedicación. Asegurémonos siempre de
+            brindarles el cuidado y el cariño que merecen, pues ellos nos
+            llenan de amor y alegría cada día."</p>
+    </footer>
+
+    <script src="formulario.js"></script>
+</body>
+</html>

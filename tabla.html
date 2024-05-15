@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabla.css">
+    <link rel="stylesheet" href="formulario.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Citas Peluditos</title>
+</head>
+<body>
+    <table id="tabla">
+        <thead>
+          <tr>
+            <th colspan="8">Citas</th>
+          </tr>
+          <tr>
+            <th>#</th>
+            <th>Email</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Mascota</th>
+            <th>Pasatiempo</th>
+            <th>Servicio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div id="btn-a" class="formbold-btn-wrapper">
+        <a href="index.html" class="formbold-btn"> Regresar </a>
+    </div>
+    <br><br>
+    
+    <div id="formulario">
+    <h1>Actualiza cita</h1>
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+            <form>
+                <div class="formbold-input-flex">
+                    <div>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="jhon@mail.com"
+                            class="formbold-form-input"
+                        />
+                        <label for="email" class="formbold-form-label"> E-mail </label>
+                    </div>
+                    <div>
+                        <input
+                            type="text"
+                            name="firstName"
+                            id="firstName"
+                            placeholder="Jane"
+                            class="formbold-form-input"
+                        />
+                        <label for="firstName" class="formbold-form-label"> Nombre </label>
+                    </div>
+                    <div>
+                        <input
+                            type="text"
+                            name="lastName"
+                            id="lastName"
+                            placeholder="Cooper"
+                            class="formbold-form-input"
+                        />
+                        <label for="lastName" class="formbold-form-label"> Primer Apellido </label>
+                    </div>
+                </div>
+
+                <div class="formbold-input-flex">
+                    <div>
+                        <input
+                            type="text"
+                            name="petName"
+                            id="petName"
+                            placeholder="Nombre de tu peludito"
+                            class="formbold-form-input"
+                        />
+                        <label for="petName" class="formbold-form-label"> Nombre de tu peludito </label>
+                    </div>
+                </div>
+                
+
+                <div class="formbold-input-flex">
+                    <div>
+                        <input
+                            type="text"
+                            name="service"
+                            id="service"
+                            placeholder="Tipo de servicio"
+                            class="formbold-form-input"
+                        />
+                        <label for="service" class="formbold-form-label"> Tipo de servicio </label>
+                    </div>
+                </div>
+                
+
+                <div class="formbold-textarea">
+                    <textarea
+                        rows="6"
+                        name="favoriteHobby"
+                        id="favoriteHobby"
+                        placeholder="Escribe aquí el pasatiempo favorito de tu peludito..."
+                        class="formbold-form-input"
+                    ></textarea>
+                    <label for="favoriteHobby" class="formbold-form-label"> Pasatiempo favorito de tu peludito </label>
+                </div>
+
+                <button id="btnModificar" class="formbold-btn">
+                    Modificar
+                </button>
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+    <script src="tabla.js"></script>
+</body>
+</html>
+
